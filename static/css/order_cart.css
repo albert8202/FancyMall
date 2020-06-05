@@ -1,0 +1,64 @@
+.table-wrapper{
+    font-size: 12px;
+    font-family: "微软雅黑", "arial";
+    color: #262626;
+    padding: 0;
+    width: 1160px;
+    margin: auto;
+    margin-top: 200px;
+    border-collapse: collapse;
+}
+
+
+.product-pic-small{
+    height: 120px;
+    width: 120px;
+    margin-top: 13px;
+}
+
+.goOn{
+    height: 500px;
+    line-height: 500px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    /*display: none;*/
+}
+
+.product-info{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+
+td{
+  text-align: center;
+}
+
+.tr-title-container{
+    background-color:#2f3542;
+    color: white;
+    line-height: 50px;
+    box-shadow:2px 12px 28px -10px #000;
+
+}
+
+.tr-content-container{
+    background-color: rgba(223, 228, 234, 0.79);
+
+    border-bottom: 1px dashed #747d8c;
+    line-height: 45px;
+    transition: 0.5s;
+}
+
+.tr-content-container:hover{
+    background-color: #dfe4ea;
+    border-bottom: 1px dashed #747d8c;
+    line-height: 45px;
+    transition: 0.5s;
+}
+.clear-cart{
+    margin-right: 400px;
+    font-size: 18px;
+
+}

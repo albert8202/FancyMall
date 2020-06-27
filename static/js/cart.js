@@ -199,26 +199,26 @@ function displayCarts() {
             let clear =document.getElementById('clear-all');
             clear.onclick=function () {
                 var ALL=0;
+                //结账
                 var small_total = document.querySelectorAll(".totalPrice");
                     for(let i = 0;i<small_total.length;i++){
                         tt = small_total[i].innerHTML;
                         tt=tt.substr(0,tt.length-1);
-                        console.log("tt"+typeof tt);
                         var tt_num = Number(tt);
-                        console.log("tt_num"+tt_num);
-                        ALL = ALL + tt_num;}
-                        console.log("sfdsafas"+typeof ALL);
-                       console.log("ALL"+ALL);
+                        var ALL = ALL + tt_num;}
 
 
-                let msg = confirm("您确定要清空购物车吗？您的订单金额共"+`${ALL}`+"元");
-                if (msg){
+                let sure = confirm("您确定要清空购物车吗？您的订单金额共"+`${ALL}`+"元");
+                if (sure==true){
+                    console.log("要");
                     let cartt = document.getElementById("cart-table");
-                                 let clearr = document.getElementById("clear-all");
-                                 document.getElementById("blank-show").style.display="show";
-                                cartt.setAttribute("style","display:none");
-                                clearr.setAttribute("style","display:none");
-                                 alert("交易成功！");
+                    let clearr = document.getElementById("clear-all");
+                    let bl = document.getElementById("blank-show");
+
+                    // bl.setAttribute("style","display:show");
+                    cartt.setAttribute("style","display:none");
+                    clearr.setAttribute("style","display:none");
+                    alert("交易成功！");
 
 
                     myAJAX({

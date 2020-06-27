@@ -403,6 +403,8 @@ clearCart=(req,res)=>{
   let purTime = new Date().Format("yyyy-MM-dd HH:mm:ss"); 
   let sql = "update `order` set `order`.status = 1 ,`order`.create_time = \'"+purTime+"\' WHERE `order`.user_id=? and `order`.status = 0;";
   let sqlArr=[user_id];
+  console.log("清空购物车");
+  console.log(user_id);
   let callBack=(err,data)=>{
     if(err){
       console.log("something wrong with the connection...");

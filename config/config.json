@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "ljn",
-    "password": "root",
-    "database": "mall_development",
-    "host": "39.97.66.181",
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
     "dialect": "mysql"
   },
   "test": {

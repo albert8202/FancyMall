@@ -1,11 +1,11 @@
 const mysql = require('mysql');
 module.exports = {
 	config:{
-		host:'39.97.66.181',
-		port:'3307',
-		user:'ljn',
-		password:'root',
-		database:'LeeMall',
+		host:'',
+		port:'',
+		user:'',
+		password:'',
+		database:'',
 		multipleStatements: true
 	},
 
